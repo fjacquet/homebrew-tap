@@ -5,23 +5,23 @@
 class NbuExporter < Formula
   desc "Prometheus exporter for Veritas NetBackup"
   homepage "https://github.com/fjacquet/nbu_exporter"
-  version "2.3.1"
+  version "2.3.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fjacquet/nbu_exporter/releases/download/v2.3.1/nbu_exporter_2.3.1_darwin_amd64.tar.gz"
-      sha256 "88ef636f25fae1bea0d4ae6b45beb2af95f413d11636ffa26cfecffe6a8ea532"
+      url "https://github.com/fjacquet/nbu_exporter/releases/download/v2.3.2/nbu_exporter_2.3.2_darwin_amd64.tar.gz"
+      sha256 "f9dc1c03a22eaed954e1a65e2b9e3292f922758d6ccc33efe45f81eec000a909"
 
-      def install
+      define_method(:install) do
         bin.install "nbu_exporter"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fjacquet/nbu_exporter/releases/download/v2.3.1/nbu_exporter_2.3.1_darwin_arm64.tar.gz"
-      sha256 "0a3befbaa7c74f6b881dc1df87d14c29130d96423b725264f1f2e4857b0cd908"
+      url "https://github.com/fjacquet/nbu_exporter/releases/download/v2.3.2/nbu_exporter_2.3.2_darwin_arm64.tar.gz"
+      sha256 "afb00ee7d4a9882636ab2b1cc644308930c29ff8ca870068fd252a70d290e63c"
 
-      def install
+      define_method(:install) do
         bin.install "nbu_exporter"
       end
     end
@@ -29,16 +29,16 @@ class NbuExporter < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fjacquet/nbu_exporter/releases/download/v2.3.1/nbu_exporter_2.3.1_linux_amd64.tar.gz"
-      sha256 "58653216369d4343c3236a37db88e73b5a8573345eb4bbb8aa0c9c7090386513"
-      def install
+      url "https://github.com/fjacquet/nbu_exporter/releases/download/v2.3.2/nbu_exporter_2.3.2_linux_amd64.tar.gz"
+      sha256 "dc619d7ffc0a1945856cbfd9c68193134e4f984906ca3655c75d7310bd1e2592"
+      define_method(:install) do
         bin.install "nbu_exporter"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fjacquet/nbu_exporter/releases/download/v2.3.1/nbu_exporter_2.3.1_linux_arm64.tar.gz"
-      sha256 "1f6e80938e97047c795ed0e0b02374ee5858ff1c4b6eac181c429479f0304b7d"
-      def install
+      url "https://github.com/fjacquet/nbu_exporter/releases/download/v2.3.2/nbu_exporter_2.3.2_linux_arm64.tar.gz"
+      sha256 "d98aa7afc90a3271cbe56d8d6c093d79bd7ce1787f7e830a6c5dfa4d55d72b6e"
+      define_method(:install) do
         bin.install "nbu_exporter"
       end
     end
