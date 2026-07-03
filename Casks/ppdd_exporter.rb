@@ -3,7 +3,7 @@ cask "ppdd_exporter" do
   name "ppdd_exporter"
   desc "Prometheus exporter for Dell PowerProtect DD"
   homepage "https://github.com/fjacquet/ppdd_exporter"
-  version "0.8.3"
+  version "0.8.4"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "ppdd_exporter" do
   on_macos do
     on_intel do
       url "https://github.com/fjacquet/ppdd_exporter/releases/download/v#{version}/ppdd_exporter_#{version}_darwin_amd64.tar.gz"
-      sha256 "3e28d6faeaf7f85a2b3a44cf352504cddd23e8a32358438e560c810324a09942"
+      sha256 "ef34db90b252aafcd3a81caf1b03255665ee9f70489d3d7ad56a88df3fdcc4bd"
     end
     on_arm do
       url "https://github.com/fjacquet/ppdd_exporter/releases/download/v#{version}/ppdd_exporter_#{version}_darwin_arm64.tar.gz"
-      sha256 "b4d5013b5ffacfaa613bba7cdcc05ab6904a9aff1759234f8f0064a666390628"
+      sha256 "950d5064b0e5925587dce7d09193f49eb11ce8ba8a124577f8db9b234b368f6a"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/fjacquet/ppdd_exporter/releases/download/v#{version}/ppdd_exporter_#{version}_linux_amd64.tar.gz"
-      sha256 "af18665796229f45dee9105247d49da5be2df7f37755bc3ecf86cbf4cd70f31c"
+      sha256 "73b83c9dbf92af68592633a611b2d6b197c8ca0338df951728822d80d86dc74b"
     end
     on_arm do
       url "https://github.com/fjacquet/ppdd_exporter/releases/download/v#{version}/ppdd_exporter_#{version}_linux_arm64.tar.gz"
-      sha256 "6bc4060146da1439712a67bc17e20b64bc8eef5ab6c040bb623458be48dfcb72"
+      sha256 "ce2a3d5c8cfc7ce69a18cbad3a8bd44272c01cd64062b3fc66fce61ffda3e340"
     end
   end
 
