@@ -5,21 +5,21 @@
 class CamtCsv < Formula
   desc "Convert financial statements (CAMT.053 XML, PDF, Revolut CSV, Selma CSV) to standardized CSV with AI-powered categorization"
   homepage "https://github.com/fjacquet/camt-csv"
-  version "4.0.1"
+  version "4.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fjacquet/camt-csv/releases/download/v4.0.1/camt-csv_4.0.1_darwin_amd64.tar.gz"
-      sha256 "343c1903211a4cca4f4f2f8451d292a5d4898845cd5e819ea117af0746471405"
+      url "https://github.com/fjacquet/camt-csv/releases/download/v4.1.0/camt-csv_4.1.0_darwin_amd64.tar.gz"
+      sha256 "ba88b810f4327f569cd6cafed6774ef6473900ad9dfa6f3dac5408caab1c64db"
 
       define_method(:install) do
         bin.install "camt-csv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fjacquet/camt-csv/releases/download/v4.0.1/camt-csv_4.0.1_darwin_arm64.tar.gz"
-      sha256 "5b74a47fd346523a3c352e69eade89212328d9633ea2c1270f9be3816317d22b"
+      url "https://github.com/fjacquet/camt-csv/releases/download/v4.1.0/camt-csv_4.1.0_darwin_arm64.tar.gz"
+      sha256 "fe04108f8400c2d04e593310fe13fb9aec3b08f3fd14b513ce942e4f099bfb16"
 
       define_method(:install) do
         bin.install "camt-csv"
@@ -29,15 +29,15 @@ class CamtCsv < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fjacquet/camt-csv/releases/download/v4.0.1/camt-csv_4.0.1_linux_amd64.tar.gz"
-      sha256 "233432c59dc7b0f2abd4f1de8f01950d813f96d9b45f937a0c7200b3e623d924"
+      url "https://github.com/fjacquet/camt-csv/releases/download/v4.1.0/camt-csv_4.1.0_linux_amd64.tar.gz"
+      sha256 "60e715fafbb044e08fefc19ce8abe8e16fd4cd01cbcfc32fa4eb08c7ae7de1a9"
       define_method(:install) do
         bin.install "camt-csv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fjacquet/camt-csv/releases/download/v4.0.1/camt-csv_4.0.1_linux_arm64.tar.gz"
-      sha256 "8e7b2db68ec6df1d2ea7da707c24a541948a0d45e2fd399f0236683ab5b5d53b"
+      url "https://github.com/fjacquet/camt-csv/releases/download/v4.1.0/camt-csv_4.1.0_linux_arm64.tar.gz"
+      sha256 "9405dc48bcf3bc024f57ae8f29855cde900705897f3536c6dc621a4a2c23171c"
       define_method(:install) do
         bin.install "camt-csv"
       end
